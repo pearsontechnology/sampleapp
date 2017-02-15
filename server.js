@@ -2,14 +2,18 @@
 
 const express = require('express');
 
-// Constants
+
 const PORT = 8080;
 
-// App
+
 const app = express();
 app.get('/', function (req, res) {
   console.log('user hit')
-  res.send('Hello world\n');
+  console.log('Welcome to My Console,');
+setTimeout(function() {
+    console.log('test oom');
+}, 3000);
+  res.send('test oom\n');
 });
 
 app.listen(PORT);
